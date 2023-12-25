@@ -1,0 +1,417 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px; 
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+/*
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: paleturquoise;
+    z-index: 1;
+    border-bottom: 1px solid rgb(238, 155, 155);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+*/
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation 
+  */
+.logo a {
+  font-size: 35px;
+  font-weight: 600px;
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(238, 155, 155);     
+}
+
+.menu {
+  float: right;
+}
+
+.menu .fa {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.navbar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 60px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: paleturquoise;
+  z-index: 1;
+  border-bottom: 1px solid rgb(238, 155, 155); 
+}
+  
+.navbar ul {
+  list-style: none;
+  overflow: hidden;
+  display: inline-flex;
+}
+
+.navbar ul li a {
+  color: rgb(70, 193, 233);
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 8px 0px 8px;
+  text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #f2cc65;
+  text-decoration: underline;
+
+}
+
+/*.navbar ul .dropdown {
+  display: block;
+  position: absolute;
+  background: turquoise;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.navbar ul .dropdown ul {
+  display: block;
+  margin: 7px;
+}
+
+.navbar ul .dropdown ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+  
+.navbar ul .dropdown ul li:last-child{
+  border-bottom: none;
+}
+
+.navbar ul .dropdown ul li a:hover {
+  color: antiquewhite;
+}*/
+
+
+/*.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #080808;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+  
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+  
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #f2cc65;
+  text-decoration: underline;
+}*/ 
+
+/*transition: 0.3s;*/
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  background: paleturquoise;
+  opacity: 0;
+
+  
+}
+  
+.navbar .dropdown ul li a {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: none;
+  color: rgb(70, 193, 233);
+}
+  
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li a:hover {
+  color: #d4ba8c;
+}
+  
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+  
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+  
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+  
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: goldenrod;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: goldenrod;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-merah {
+    background: rgb(236, 145, 175);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 0px 3px 0px 3px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-merah:hover {
+    background: rgb(238, 39, 105);
+    text-decoration: none;
+}
+
+a.tbl-biru {
+    background: rgb(144, 192, 234);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: rgb(42, 153, 222); 
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-tutor img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.kartu-tutor p {
+    font-family: 'comic sans ms';
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: goldenrod;
+}
+
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-patner {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-patner img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#contact {
+    background: rgb(146, 234, 225);
+    padding: 50px 0px 50px 0px;
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: goldenrod;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+@media  screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-tutor {
+        width: 50%;
+    }
+
+    .kartu-patner {
+        width: 50%;
+    }
+}
